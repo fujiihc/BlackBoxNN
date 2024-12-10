@@ -19,19 +19,26 @@ The paper https://www.mdpi.com/2076-3417/10/3/766 helped inspire initial archite
   Test Data was Created By Me
   
 ## Future Plans
-  Model Other Effects, Model an Amplifier
-    Boss DS-1, Ibanez TS9, Marshall DSL20HR
-    Experiment with Cabinets and Impulse Responses
-    
-  Improve LSTM Model Performance
-    Experiment with Context Size, Model Architectures, Train/Val Dataset Selection
-    
-  Include Adjustable Parameters in Models
-    Tone, Level, Gain Controls for Starters
-    
-  Create Real-Time Hardware Integration for Models
-    Allow Users to Load Models onto Physical Devices
+Model Other Effects, Model an Amplifier
+  
+  - Boss DS-1, Ibanez TS9, Marshall DSL20HR
+  
+  - Experiment with Cabinets and Impulse Responses
 
-  Experiment With Hybrid Analog/Neural Net Based Devices
-    Model Subsections of Circuits and Integrate with Analog Circuits
+
+Improve LSTM Model Performance
+  
+  - Experiment with Context Size, Model Architectures, Train/Val Dataset Selection
+    
+Include Adjustable Parameters in Models
+  
+  - Tone, Level, Gain Controls for Starters
+    
+Create Real-Time Hardware Integration for Models
+  
+  - Allow Users to Load Models onto Physical Devices
+
+Experiment With Hybrid Analog/Neural Net Based Devices
+  
+  - Model Subsections of Circuits and Integrate with Analog Circuits
 
