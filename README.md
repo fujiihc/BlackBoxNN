@@ -6,17 +6,17 @@ This project was inspired by an interest in Nerual Models for guitar effects aft
 As a guitar player for many years with an interest in messing around with pedal and amp electronics, this project was a natural choice.
 It was originally for my DS340 AI/ML Final Project, but I've decided to take it further.
 
-The paper https://www.mdpi.com/2076-3417/10/3/766 helped inspire initial architectures and experiments, but my version has been modified.
+The paper [Real-Time Guitar Amplifier Emulation with Deep Learning](https://www.mdpi.com/2076-3417/10/3/766) helped inspire initial architectures and experiments, but my version has been modified.
 
 
 ## Datasets Used
-  IDMT-SMT-Guitar Dataset: https://zenodo.org/records/7544110
+[IDMT-SMT-Guitar Dataset](https://zenodo.org/records/7544110)
   
-  GuitarSet: https://zenodo.org/records/3371780
+[GuitarSet](https://zenodo.org/records/3371780)
   
-  EGDB: https://drive.google.com/drive/folders/1h9DrB4dk4QstgjNaHh7lL7IMeKdYw82_
+[EGDB](https://drive.google.com/drive/folders/1h9DrB4dk4QstgjNaHh7lL7IMeKdYw82_)
   
-  Test Data was Created By Me
+Test Data was Created By Me
   
 ## Future Plans
 Model Other Effects, Model an Amplifier
