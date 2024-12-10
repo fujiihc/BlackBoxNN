@@ -1,0 +1,1 @@
+{"sampleRate": 44100, "chunkSize": 44, "trainNvalSize": 74862, "lstmUnits": 96, "learningRate": 0.01, "epochs": 100, "patience": 15, "batchSize": 64, "shuffle": true, "randomState": 25, "trainTime": 332.74865221977234, "gain": "Low", "testing": 0.024927111342549324}
