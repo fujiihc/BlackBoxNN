@@ -30,12 +30,12 @@ for root, dirs, files in os.walk(f"{audioFilePath}{storageDir}"):
             audio, sr = lb.load(path,sr=sampleRate, mono = True)
             recordedAudio = sd.playrec(audio, samplerate = sampleRate, channels = channels)
             sd.wait()
-            distortedL = recordedAudio[:,0]
-            cleanR = recordedAudio[:,1]
+            wetL = recordedAudio[:,0]
+            dryR = recordedAudio[:,1]
             #can also use "PCM_16"
             #include directory where files will be saved
-            sf.write(f"{audioFilePath}{outputDir}/Distorted/d_{file}", distortedL, sampleRate, subtype='PCM_24')
-            sf.write(f"{audioFilePath}{outputDir}/Clean/c_{file}", cleanR, sampleRate, subtype='PCM_24') 
+            sf.write(f"{audioFilePath}{outputDir}/Wet/w_{file}", wetL, sampleRate, subtype='PCM_24')
+            sf.write(f"{audioFilePath}{outputDir}/Dry/d_{file}", dryR, sampleRate, subtype='PCM_24') 
             #print(counter)
             counter +=1
 
