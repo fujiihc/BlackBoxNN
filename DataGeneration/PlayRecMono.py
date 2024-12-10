@@ -16,14 +16,17 @@ sd.default.channels = channels
 
 
 audioFilePath = ""
-storageDir = ""
-outputDir = ""
+
+effect = "SD-1"
+projVer = "DS340"
+gain = ""
+testOrTrain = "Test"
+
 #make sure clean and distorted are recorded on the correct channels
 #otherwise switch them
 
-#might be stored in a subdirectory
 counter = 0
-for root, dirs, files in os.walk(f"{audioFilePath}{storageDir}"):
+for root, dirs, files in os.walk(f"./Data/Inputs"):
     for file in files:
         if file.endswith(".wav"):
             path = os.path.join(root,file)
@@ -33,9 +36,8 @@ for root, dirs, files in os.walk(f"{audioFilePath}{storageDir}"):
             wetL = recordedAudio[:,0]
             dryR = recordedAudio[:,1]
             #can also use "PCM_16"
-            #include directory where files will be saved
-            sf.write(f"{audioFilePath}{outputDir}/Wet/w_{file}", wetL, sampleRate, subtype='PCM_24')
-            sf.write(f"{audioFilePath}{outputDir}/Dry/d_{file}", dryR, sampleRate, subtype='PCM_24') 
+            sf.write(f"./Data/{effect}/{projVer}/{testOrTrain}/{gain}/Wet/w_{file}", wetL, sampleRate, subtype='PCM_24')
+            sf.write(f"./Data/{effect}/{projVer}/{testOrTrain}/{gain}/Dry/d_{file}", dryR, sampleRate, subtype='PCM_24') 
             #print(counter)
             counter +=1
 
