@@ -2,7 +2,7 @@
 Black Box Neural Network Modelling of Guitar Amplifiers and Effect Pedals
 
 ## Overview
-This project was inspired by an interest in Nerual Models for guitar effects after my friend introduced me to Neural DSP Plugins. 
+This project was inspired by an interest in Neural Models for guitar effects after my friend introduced me to Neural DSP Plugins. 
 As a data scientist and guitar player with an interest in messing around with pedal and amp electronics, this project was a natural choice.
 It was originally for my DS340 AI/ML Final Project, but I've decided to take it further.
 
