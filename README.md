@@ -18,7 +18,7 @@ The paper [Real-Time Guitar Amplifier Emulation with Deep Learning](https://www.
   
 Test Data was Created By Me
   
-## Future Plans
+## To-Do/Future Plans
 Model Other Effects, Model an Amplifier
   
   - Boss DS-1, Ibanez TS9, Marshall DSL20HR
