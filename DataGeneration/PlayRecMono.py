@@ -5,8 +5,8 @@ import soundfile as sf
 
 sampleRate = 44100
 channels = 2
-
-
+#Use this to find out what Input and Output devices to use
+#print(sd.query_devices())
 sd.default.device = (20,17)
 sd.default.samplerate = sampleRate
 sd.default.channels = channels
