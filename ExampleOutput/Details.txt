@@ -1,0 +1,3 @@
+Riff: shadowlove.wav
+Model: ./Models/SD-1/DS340/Model35
+ESR Loss: 0.034969840198755264 
