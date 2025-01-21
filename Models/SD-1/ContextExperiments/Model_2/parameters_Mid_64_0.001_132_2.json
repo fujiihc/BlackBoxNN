@@ -1,0 +1,1 @@
+{"sampleRate": 44100, "context": 132, "trainNvalSize": 75000, "lstmUnits": 64, "learningRate": 0.001, "epochs": 100, "patience": 15, "batchSize": 64, "shuffle": true, "randomState": 25, "trainTime": 707.4014027118683, "gain": "Mid", "testESR": 0.02601519227027893}
