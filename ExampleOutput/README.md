@@ -9,7 +9,7 @@ ESR Loss: 0.034969840198755264
 
 ## Graphs
 500 Sample Comparison:
-![500 Sample Comparison](../Images/smallComparison.png)
+![500 Sample Comparison](../Images/ExampleOutputImg/smallComparison.png)
 
 Whole Song Comparison:
-![Whole Song Comparsion:](../Images/wholeComparison.png)
+![Whole Song Comparsion:](../Images/ExampleOutputImg/wholeComparison.png)
