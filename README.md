@@ -18,7 +18,9 @@ All the work done is for Educational and Personal use.
 [EGDB](https://drive.google.com/drive/folders/1h9DrB4dk4QstgjNaHh7lL7IMeKdYw82_)
 
 All Other Data was Created By Me
-  
+
+## Table of Contents
+
 ## To-Do/Future Plans
 Model Other Effects, Model an Amplifier
   
