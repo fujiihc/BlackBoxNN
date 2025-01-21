@@ -9,7 +9,7 @@ PlayRecMono.py takes Mono files, and plays them through a Buffer Splitter (Boss 
 Both Dry and Wet signals are recorded at the same time so there is no latency between them.
 
 ## Set Up
-![Set Up](../Images/RecordingSetUp.jpg)
+![Set Up](../Images/DataGenerationImg/RecordingSetUp.jpg)
 
 ## Recording Settings
 
