@@ -1,7 +1,7 @@
 # ExampleOutput
 Example Output from /SD-1/DS340
 ## Overview
-Riff: shadowlove.wav
+Riff: [shadowlove.wav](../Data/Inputs/shadowlove.wav)
 
 Model: [/Models/SD-1/DS340/Model35](../Models/SD-1/DS340/Model35)
 
