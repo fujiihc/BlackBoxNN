@@ -9,7 +9,7 @@ This experiment aimed to model a Boss SD-1 at varying gain levels, but also to s
 ## Training/Validation Data 
 Data was split into context chunks of size n with no overlap. The x data was a single chunk of dry audio with size n, and the y data was the corresponding wet audio output sample.
 
-[Training/Validation Data](../../TrainValPickles/SD-1/DS340)
+[Training/Validation Data](../../../TrainValPickles/SD-1/DS340)
 
 ## Model Architecture
 All models consisted of a single LSTM layer, fed into a single Dense layer.
