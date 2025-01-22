@@ -29,7 +29,7 @@ Variable Hyperparameters:
   - Gain Levels on Boss SD-1: "Low", "Mid", "High"
   - Training/Validation Data Context Sizes: 44, 66, 88 samples (Corresponding to 1, 1.5, and 2 ms with a sample rate of 44.1K)
   - LSTM Hidden Unit Sizes: 64 and 96 units
-  - Model Learning Rates: 0.01, 0.001, 0.0001
+  - Model Learning Rates: 0.01 and 0.0001
 
 Fixed Hyperparameters:
   - Patience: 15
@@ -41,8 +41,12 @@ Fixed Hyperparameters:
   - All models trained on approximately 75K data samples relative to Context Size
   - Adam Optimizer used
   - Loss Function: ESR Loss
-    
+
+## Testing Data
+All models were tested on [battery.wav](../../../Data/Inputs/battery.wav), [electricEye.wav](../../../Data/Inputs/electricEye.wav), [holywar.wav](../../../Data/Inputs/holywar.wav), [ohwell.wav](../../../Data/Inputs/ohwell.wav), [sanitarium.wav](../../../Data/Inputs/sanitarium.wav), and [shadowlove.wav](../../../Data/Inputs/shadowlove.wav). These were chosen for their diversity in speed and complexity.
+
 ## Results
+The performance of the models are as follows:
 
 ## Conclusions
 
