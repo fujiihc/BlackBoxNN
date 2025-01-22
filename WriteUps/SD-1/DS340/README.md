@@ -6,6 +6,15 @@ This was the first experiment of this project for my DS340 class.
 
 This experiment aimed to model a Boss SD-1 at varying gain levels, but also to see how different model hyperparameters would influence modelling accuracy.
 
+## Recording Settings
+
+SD-1/DS340
+  - Dry and Wet signals recorded at 20dB input at 44.1K Hz on Focusrite Scarlett 2i2 Gen 4
+  - Tone and Level knobs at Noon
+  - Low Gain: Drive at 9:00
+  - Mid Gain: Drive at 12:00
+  - High Gain: Drive at 3:00
+    
 ## Training/Validation Data 
 Data was split into context chunks of size n with no overlap. The x data was a single chunk of dry audio with size n, and the y data was the corresponding wet audio output sample.
 
