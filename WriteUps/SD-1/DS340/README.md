@@ -32,7 +32,7 @@ Variable Hyperparameters:
   - Model Learning Rates: 0.01 and 0.0001
 
 Fixed Hyperparameters:
-  - Patience: 15
+  - Patience/Early Stopping: 15
   - Batch Size: 64
   - Epochs: 100
   - Training Data Shuffled: True
@@ -42,6 +42,9 @@ Fixed Hyperparameters:
   - Adam Optimizer used
   - Loss Function: ESR Loss
 
+## Metrics
+ESR loss (Error to Signal Ratio) was used as the loss function for all models. MSE and MAE were also observed as well.
+
 ## Testing Data
 All models were tested on [battery.wav](../../../Data/Inputs/battery.wav), [electricEye.wav](../../../Data/Inputs/electricEye.wav), [holywar.wav](../../../Data/Inputs/holywar.wav), [ohwell.wav](../../../Data/Inputs/ohwell.wav), [sanitarium.wav](../../../Data/Inputs/sanitarium.wav), and [shadowlove.wav](../../../Data/Inputs/shadowlove.wav). These were chosen for their diversity in speed and complexity. ESR loss for the model's predictions vs the true SD-1 output was saved. The output audio files were also saved.
 
@@ -50,9 +53,28 @@ All Results:
 ![All Results](../../../Images/SD-1/DS340/modelResults.png)
 
 Summarized Hyperparameter Results:
-![Summarized Results](../../../Images/SD-1/DS340/summary_modelResults_scaled.png)
+![Summarized Results](../../../Images/SD-1/DS340/summary_modelResults.png)
 
 ## Conclusions
+Across the board, all models performed well, ranging from 1-5% ESR loss. 
+
+In terms of model architectures, there were only 12 unique architectures/hyperparameter combinations. The 36 models tested came from testing the 12 combinations on the 3 gain levels (Low, Mid, High). The average performance of all of the models was in the 3% ESR loss range.
+
+A higher context size seemed to result in better performance. However, the difference between the context sizes was only 22 samples (approximately 0.5 ms). Significantly larger context sizes might result in better performance.
+
+There appeared to be no difference in performance between an LSTM hidden unit size of 64 and 96. Train time for 96 units was marginally slower, and average ESR loss and average epochs appeared to be around the same. More or fewer units may result in more significant differences.
+
+Surprisingly, the faster learning rate appeared to perform better than the slower learning rate, as well as take half the time to train. However, it is worth noting that a few of the models with the faster learning rate had a bit of instability. Models with the slower learning rate also appeared to use all of the 100 epochs alloted to the models, indicating that perhaps they didn't have enough time to fully converge. Their training was also stable across the board. It may be worth looking at increasing the number of epochs for all models, as well as choosing a learning rate between 0.01 and 0.0001.
+
+In a listening test, model outputs and true SD-1 outputs were extremely similar. There were some extremely minor artifacts, but some of the artifacts were due to some Focusrite 2i2 bugs during recording. 
 
 ## Takeaways
+The experiment was ultimately successful, having set the stage for future experiments.
+From here, further exploration into the individual hyperparameters is necessary.
+Context size seems promising to better results, as does balancing the learning rate and epochs, allowing models to fully converge. 
 
+Other architectures will be explored due to the simplicity of the current model. Currently models can only really "profile" an effect, and don't have the ability to deal with tone, level, and gain adjustments.
+
+The current models show good potential to model other effects as well.
+
+Methodologies need to be explored to reduce artifacts and for other analysis. Purely basing a model's performance on ESR loss may lead to misleading results and models that perform worse in reality to listeners.
