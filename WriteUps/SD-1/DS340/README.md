@@ -43,10 +43,14 @@ Fixed Hyperparameters:
   - Loss Function: ESR Loss
 
 ## Testing Data
-All models were tested on [battery.wav](../../../Data/Inputs/battery.wav), [electricEye.wav](../../../Data/Inputs/electricEye.wav), [holywar.wav](../../../Data/Inputs/holywar.wav), [ohwell.wav](../../../Data/Inputs/ohwell.wav), [sanitarium.wav](../../../Data/Inputs/sanitarium.wav), and [shadowlove.wav](../../../Data/Inputs/shadowlove.wav). These were chosen for their diversity in speed and complexity.
+All models were tested on [battery.wav](../../../Data/Inputs/battery.wav), [electricEye.wav](../../../Data/Inputs/electricEye.wav), [holywar.wav](../../../Data/Inputs/holywar.wav), [ohwell.wav](../../../Data/Inputs/ohwell.wav), [sanitarium.wav](../../../Data/Inputs/sanitarium.wav), and [shadowlove.wav](../../../Data/Inputs/shadowlove.wav). These were chosen for their diversity in speed and complexity. ESR loss for the model's predictions vs the true SD-1 output was saved. The output audio files were also saved.
 
 ## Results
-The performance of the models are as follows:
+All Results:
+![All Results](../../../Images/SD-1/DS340/modelResults.png)
+
+Summarized Hyperparameter Results:
+![Summarized Results](../../../Images/SD-1/DS340/summary_modelResults_scaled.png)
 
 ## Conclusions
 
