@@ -1,13 +1,11 @@
 ## Recording Settings
-
-DSL20HPreamp/UltraGain
-  - Dry signals recorded at 20dB input at 44.1K Hz on Focusrite Scarlett 2i2 Gen 4
-  - Wet signals recorded at 15dB input at 44.1K Hz on Focusrite Scarlett 2i2 Gen 4
-  - Reverb, Resonance, and Presence knobs at 0
-  - EQ knobs at at 5
-  - Tone Shift off
-  - Ultra Gain channel on
-  - Volume at 10
-  - Low Gain: Gain at 2
-  - Mid Gain: Gain at 5
-  - High Gain: Gain at 8
+- Dry signals recorded at 20dB input at 44.1K Hz on Focusrite Scarlett 2i2 Gen 4
+- Wet signals recorded at 15dB input at 44.1K Hz on Focusrite Scarlett 2i2 Gen 4
+- Reverb, Resonance, and Presence knobs at 0
+- EQ knobs at at 5
+- Tone Shift off
+- Ultra Gain channel on
+- Volume at 10
+- Low Gain: Gain at 2
+- Mid Gain: Gain at 5
+- High Gain: Gain at 8
