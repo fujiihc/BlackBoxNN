@@ -17,7 +17,7 @@ This experiment aimed to model a Boss SD-1 at varying gain levels, but also to s
 [Recordings](../../../Data/SD-1/DS340)
 
 ## Training/Validation Data 
-Data was split into context chunks of size n with no overlap. The x data was a single chunk of dry audio with size n, and the y data was the corresponding wet audio output sample.
+Data was split into context chunks of size n WITH NO overlap. The x data was a single chunk of dry audio with size n, and the y data was the corresponding wet audio output sample.
 
 [Training/Validation Data](../../../TrainValPickles/SD-1/DS340)
 
