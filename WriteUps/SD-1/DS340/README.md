@@ -78,3 +78,5 @@ Other architectures will be explored due to the simplicity of the current model.
 The current models show good potential to model other effects as well.
 
 Methodologies need to be explored to reduce artifacts and for other analysis. Purely basing a model's performance on ESR loss may lead to misleading results and models that perform worse in reality to listeners.
+
+Methodologies need to be explored to determine statistically significant hyperparameters and model performance. Currently I'm making assumptions based on the data I'm seeing.
