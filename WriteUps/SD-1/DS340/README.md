@@ -13,7 +13,9 @@ This experiment aimed to model a Boss SD-1 at varying gain levels, but also to s
 - Low Gain: Drive at 9:00
 - Mid Gain: Drive at 12:00
 - High Gain: Drive at 3:00
-    
+
+[Recordings](../../../Data/SD-1/DS340)
+
 ## Training/Validation Data 
 Data was split into context chunks of size n with no overlap. The x data was a single chunk of dry audio with size n, and the y data was the corresponding wet audio output sample.
 
