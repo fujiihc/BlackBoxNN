@@ -161,3 +161,5 @@ Experiment With Hybrid Analog/Neural Net Based Devices
   
   - Model Subsections of Circuits and Integrate with Analog Circuits
 
+Create Statistical Evaluation Methodology to Compare Model Performance
+
