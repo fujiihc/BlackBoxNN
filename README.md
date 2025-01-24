@@ -124,7 +124,7 @@ All the work done is for Educational and Personal use.
     ```
     </details>
 
-  - [WriteUps](/WriteUps): Contains README write ups for each experiment/project version.
+  - [WriteUps](/WriteUps): Contains README write ups for each experiment/project version. Includes, descriptions, graphs, and analysis.
     <details><summary>WriteUps Folder Structure</summary>
 
     ```
