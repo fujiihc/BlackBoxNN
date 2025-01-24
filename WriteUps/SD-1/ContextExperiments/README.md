@@ -53,9 +53,6 @@ All models were tested on [battery.wav](../../../Data/Inputs/battery.wav), [elec
 All Results:
 ![All Results](../../../Images/SD-1/ContextExperiments/modelResults.png)
 
-Graphed Results:
-![Graphed Results](../../../Images/SD-1/ContextExperiments/ESRLossContextSize.png)
-
 ## Conclusions
 Overall, the experiment was very successful, as the results indicated that increasing context size for the same model architecture will improve modeling results. For the more complex riffs like holywar.wav and shadowlove.wav, going from 44 samples (1ms) to 440 (10ms) of context improved modeling accuracy by 2-3%. This improvement can be seen when graphing the expected output, and model output of the waveforms for the riffs. Below are the waveform graphs for shadowlove.wav at 1ms of context, and 10ms of context.
 
@@ -76,6 +73,9 @@ Model 9 (440 samples, 10 ms) Train Val Loss Graph (All other models had similar 
 ![model9440](../../../Images/SD-1/ContextExperiments/C440TrainValLoss.png)
 
 One thing worth noting is that the accuracy gains from increasing context size appear to diminish exponentially as context size increases linearly. This creates a limitation in which at a certain point, it is practically pointless to increase context size to improve model performance. In fact, it might be the case that after a certain point, model performance will decrease instead.
+
+ESR Loss vs Context Size per Test Riff Results:
+![ESRLossVContext](../../../Images/SD-1/ContextExperiments/ESRLossContextSize.png)
 
 Another thing worth noting during training was training time duration and epochs. All models were given 100 epochs to converge with a early stopping patience of 15. From the results, it appears that the number of epochs needed to converge isn't necessarily correlated with increasing context size. However, train time per epoch increased with the increase in context size. This increase appears to be linear, indicating that there is eventually a practical limit to how much one can increase context size, especially considering that the accuracy improvements diminish with increased context, and are very small by comparison. In addition to increased train time per epoch, there are memory constraints in training and running models that take larger context sizes. Larger context sizes mean more audio samples per data sample in a dataset. Although there are benefits to increasing context size to improve model accuracy, there are a few significant practical restraints in terms of time and computation.
 
