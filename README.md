@@ -147,7 +147,7 @@ Model Other Effects, Model an Amplifier
 
 Improve LSTM Model Performance
   
-  - Experiment with Context Size, Model Architectures, Train/Val Dataset Selection, Creating my own train set
+  - Experiment with Context Size, Model Architectures, Better Train/Val Dataset Selection
     
 Include Adjustable Parameters in Models
   
