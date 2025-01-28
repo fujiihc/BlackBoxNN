@@ -1,1 +1,1 @@
-{"sampleRate": 44100, "chunkSize": 44, "trainNvalSize": 74862, "lstmUnits": 64, "learningRate": 0.01, "epochs": 100, "patience": 15, "batchSize": 64, "shuffle": true, "randomState": 25, "trainTime": 378.4429817199707, "gain": "Mid", "testing": 0.03290187567472458}
+{"sampleRate": 44100, "contextSize": 44, "trainNvalSize": 74862, "lstmUnits": 64, "learningRate": 0.01, "trainEpochs": 100, "epochs": 44, "patience": 15, "batchSize": 64, "shuffle": true, "randomState": 25, "trainTime": 378.4429817199707, "gain": "Mid", "testESR": 0.03290187567472458}
