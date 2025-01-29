@@ -1,6 +1,8 @@
 # DSL20HPreamp/UltraGain
 Marshall DSL20H Preamp Modelling on the UltraGain Channel
 
+**Experiment #3**
+
 ## Overview
 This is the first experiment with modelling a tube amplifier. 
 
