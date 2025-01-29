@@ -1,6 +1,8 @@
 # SD-1/ContextExperiments
 Boss SD-1 Modelling with Experiments Adjusting the Context Size Hyperparameter
 
+**Experiment #2**
+
 ## Overview
 This was the first continuation of the project from [SD-1/DS340](../../../WriteUps/SD-1/DS340/README.md). The results from SD-1/DS340 indicated that increasing context size for the models to learn from might improve performance. This experiment centered around training models with the same hyperparameters on increasing levels of context to see how well they would perform.
 
