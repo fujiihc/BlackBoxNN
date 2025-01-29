@@ -11,7 +11,9 @@ This was the first continuation of the project from [SD-1/DS340](../../../WriteU
 - Mid Gain: Drive at 12:00
 
 The recordings used for this dataset were the same recordings used for SD-1/DS340: [Recordings](../../../Data/SD-1/DS340)
-    
+
+[Recording Set Up](../../../DataGeneration)
+
 ## Training/Validation Data 
 Data was split into context chunks of size n WITH overlap. The x data was a single chunk of dry audio with size n, and the y data was the corresponding wet audio output sample.
 
