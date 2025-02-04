@@ -65,6 +65,11 @@ ESR loss (Error to Signal Ratio) was used as the loss function for all models. M
 All models were tested on [battery.wav](../../../Data/Inputs/battery.wav), [electricEye.wav](../../../Data/Inputs/electricEye.wav), [holywar.wav](../../../Data/Inputs/holywar.wav), [ohwell.wav](../../../Data/Inputs/ohwell.wav), [sanitarium.wav](../../../Data/Inputs/sanitarium.wav), and [shadowlove.wav](../../../Data/Inputs/shadowlove.wav). These were chosen for their diversity in speed and complexity. It also would take too long to test all 36 models on all of the song samples. ESR loss for the model's predictions vs the true DSL20H Preamp's output was saved. The output audio files were also saved.
 
 ## Results
+All Results:
+![All Results](../../../Images/DSL20HPreamp/UltraGain/modelResults.png)
+
+Summarized Hyperparameter Results:
+![Summarized Results](../../../Images/DSL20HPreamp/UltraGain/summary_modelResults.png)
 
 ## Conclusions
 
