@@ -141,13 +141,13 @@ All the work done is for Educational and Personal use.
 ## To-Do/Future Plans
 Model Other Effects, Model an Amplifier
   
-  - Boss DS-1, Ibanez TS9, Marshall DSL20HR
+  - Boss DS-1, Ibanez TS9, ~~Marshall DSL20HR~~
   
   - Experiment with Cabinets and Impulse Responses
 
 Improve LSTM Model Performance
   
-  - Experiment with Context Size, Model Architectures, Better Train/Val Dataset Selection
+  - Experiment with ~~Context Size~~, Model Architectures, Better Train/Val Dataset Selection
     
 Include Adjustable Parameters in Models
   
