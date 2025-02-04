@@ -7,6 +7,10 @@ Model: [/Models/SD-1/DS340/Model35](../Models/SD-1/DS340/Model35)
 
 ESR Loss: 0.034969840198755264
 
+[Boss SD-1 Output](./BossSD-1.wav)
+
+[Neural Net Output](./NeuralNetwork.wav)
+
 ## Graphs
 500 Sample Comparison:
 ![500 Sample Comparison](../Images/ExampleOutput/smallComparison.png)
