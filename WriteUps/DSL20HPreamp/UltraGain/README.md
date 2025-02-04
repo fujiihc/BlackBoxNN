@@ -72,5 +72,7 @@ Summarized Hyperparameter Results:
 ![Summarized Results](../../../Images/DSL20HPreamp/UltraGain/summary_modelResults.png)
 
 ## Conclusions
+Unfortunately, all of the models performed extremely poorly. During testing, ESR Loss ranged from 15-30%. Even though models were given 200 epochs to converge (an increase from 100 in [SD-1/DS340](../../../WriteUps/SD-1/DS340/README.md)), the models' ability to mimic the DSL20H Preamp at UltraGain settings was extremely poor.
+
 
 ## Takeaways
