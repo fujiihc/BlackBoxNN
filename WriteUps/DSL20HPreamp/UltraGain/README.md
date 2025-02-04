@@ -72,7 +72,47 @@ Summarized Hyperparameter Results:
 ![Summarized Results](../../../Images/DSL20HPreamp/UltraGain/summary_modelResults.png)
 
 ## Conclusions
-Unfortunately, all of the models performed extremely poorly. During testing, ESR Loss ranged from 15-30%. Even though models were given 200 epochs to converge (an increase from 100 in [SD-1/DS340](../../../WriteUps/SD-1/DS340/README.md)), the models' ability to mimic the DSL20H Preamp at UltraGain settings was extremely poor.
+Unfortunately, all of the models performed extremely poorly. During testing, ESR Loss ranged from 15-30%. Even though models were given 200 epochs to converge (an increase from 100 in [SD-1/DS340](../../../WriteUps/SD-1/DS340/README.md)), the models' ability to mimic the DSL20H Preamp at UltraGain settings was extremely poor. The initial listening tests also revealed a noticeable difference between the predicted and expected outputs. As for the hyperparameters, increasing context size yielded better accuracy, which is consistent with the findings in [SD-1/DS340](../../../WriteUps/SD-1/DS340/README.md) and [SD-1/ContextExperiments](../../../WriteUps/SD-1/ContextExperiments/README.md). Consistent with the results from [SD-1/DS340](../../../WriteUps/SD-1/DS340/README.md), there is negligible difference between having 64 vs 96 LSTM units.
 
+From the summary, the accuracy difference between models with learning rates of 0.01 and 0.0001 is negligible when fully allowed to converge (at least for the testing data). However, when looking at the Training vs Validation Loss graphs, an interesting pattern appears. 
+
+Training vs Validation Loss Graphs for All Models:
+![TrainValAll](../../../Images/DSL20HPreamp/UltraGain/AllTrainVal.png)
+
+**Note: I apologize for the poor graph. There's 36 models, this is the best I could come up with quickly**
+
+From the graphs, it can be seen that the models in the first, third, and fifth columns experience large, unpredictable spikes in training and validation loss during training. These graphs correspond to models with a learning rate of 0.01. The models in the second, fourth, and sixth columns are much smoother and correspond to models with a learning rate of 0.0001.
+
+All of the models experienced a decent amount of instability compared to the models from [SD-1/DS340](../../../WriteUps/SD-1/DS340/README.md).
+
+Although the models with a learning rate of 0.0001 had a smoother convergence, their increase in accuracy was not very steep, and was less so than [SD-1/DS340](../../../WriteUps/SD-1/DS340/README.md), indicating that the models still struggled to learn the effect. 
+
+As for the difference in accuracy between models with a learning rate of 0.01 and 0.0001, there seemed to be very little difference between models with the exact same hyperparameters besides learning rate. For example, models 6 and 7. 
+
+Model 6 and Model 7 Results:
+![Model6and7](../../../Images/DSL20HPreamp/UltraGain/m6vm7.png)
+
+Model 6 (0.01 Learning Rate) Train Val Loss Graph:
+![Model6](../../../Images/DSL20HPreamp/UltraGain/Model6.png)
+
+Model 7 (0.0001 Learning Rate) Train Val Loss Graph:
+![Model6](../../../Images/DSL20HPreamp/UltraGain/Model7.png)
+
+From both models, the difference in accuracy for all test riffs is < 1%. However, the training for Model 7 was much smoother. 
+
+Given that all models performed poorly, it became necessary to look at the waveforms to try and see where the models were messing up. My initial hypothesis was that the models struggled to learn due to random noise from the DSL20H Preamp. The preamp is tube driven, which by the nature of the tecehnolgy is prone to random noise, especially when nothing is being played. It occurred to me that it was possible that the models were learning how to distort music signals accurately, but was messing up on the random noise. To check this, I graphed waveforms from Model 35 from various parts of [shadowlove.wav](../../../Data/Inputs/shadowlove.wav). 
+
+Beginning Noise Chunk:
+![Noise](../../../Images/DSL20HPreamp/UltraGain/Noise.png)
+
+This first graph (Beginning Noise Chunk) was taken from the beginning of the riff, where there was noise and silence. This graph shows that the model completely fails to predict and model the noise from the preamp. An interesting thing to note is that in the first few samples where there is no audio, and the signals are a horizontal line, the model predicts the silence at a higher amplitude than the actual input and output.
+
+Music Chunk 1:
+![Chunk1](../../../Images/DSL20HPreamp/UltraGain/Chunk1.png)
+
+Music Chunk 2:
+![Chunk2](../../../Images/DSL20HPreamp/UltraGain/Chunk2.png)
+
+As for these music chunks, the models show more promise in modelling the music distortion. The waveforms are not as tightly matched as [SD-1/DS340](../../../WriteUps/SD-1/DS340/README.md) and [SD-1/ContextExperiments](../../../WriteUps/SD-1/ContextExperiments/README.md), but they follow the general pattern which is promising. These results indicate that the models are poorly equipped to handle noise, but still show promise in modelling the actual musical elements of the signals. Therefore, the models need to be expanded to handle noise in some way, whether that be a noise gate different recording techniques, more layers, etc.
 
 ## Takeaways
