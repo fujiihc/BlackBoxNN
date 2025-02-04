@@ -79,7 +79,7 @@ From the summary, the accuracy difference between models with learning rates of 
 Training vs Validation Loss Graphs for All Models:
 ![TrainValAll](../../../Images/DSL20HPreamp/UltraGain/AllTrainVal.png)
 
-**Note: I apologize for the poor graph. There's 36 models, this is the best I could come up with quickly**
+**Note: I apologize for the poor graph. There's 36 models, this is the best I could come up with quickly.**
 
 From the graphs, it can be seen that the models in the first, third, and fifth columns experience large, unpredictable spikes in training and validation loss during training. These graphs correspond to models with a learning rate of 0.01. The models in the second, fourth, and sixth columns are much smoother and correspond to models with a learning rate of 0.0001.
 
