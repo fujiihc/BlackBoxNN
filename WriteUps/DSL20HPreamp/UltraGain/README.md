@@ -116,3 +116,17 @@ Music Chunk 2:
 As for these music chunks, the models show more promise in modelling the music distortion. The waveforms are not as tightly matched as [SD-1/DS340](../../../WriteUps/SD-1/DS340/README.md) and [SD-1/ContextExperiments](../../../WriteUps/SD-1/ContextExperiments/README.md), but they follow the general pattern which is promising. These results indicate that the models are poorly equipped to handle noise, but still show promise in modelling the actual musical elements of the signals. Therefore, the models need to be expanded to handle noise in some way, whether that be a noise gate different recording techniques, more layers, etc.
 
 ## Takeaways
+
+The experiment was very unsuccessful, but this leaves a lot space for improvement. From the results, it is clear that slower learning rates are necessary to ensure more stable and predictable training, for more complex and nonlinear distortion. 
+
+It is also necessary to change the model architecture, as the current simple architecture is not fully able to model the distortion. 
+
+The models also failed to handle random noise well. This indicates the need for a model architecture that can handle noise, or some sort of pre-processing that removes noise. 
+
+From the volume gain of the audio as well, it may also be necessary to normalize input dry and output wet data as well, so that only tonal characteristics are being modelled, not necessarily volume increases.
+
+The ESR loss function may need to be weighted depending on whether the chunk of audio being modelled is music or noise, as modelling music is more important than noise. This type of loss funciton adjustment isn't a high priority though.
+
+Methodologies need to be explored to reduce artifacts and for other analysis. Purely basing a model's performance on ESR loss may lead to misleading results and models that perform worse in reality to listeners.
+
+Methodologies need to be explored to determine statistically significant hyperparameters and model performance. Currently I'm making assumptions based on the data I'm seeing, as well as using basic graphical analysis.
