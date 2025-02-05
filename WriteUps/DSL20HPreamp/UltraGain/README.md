@@ -87,7 +87,7 @@ All of the models experienced a decent amount of instability compared to the mod
 
 Although the models with a learning rate of 0.0001 had a smoother convergence, their increase in accuracy was not very steep, and was less so than [SD-1/DS340](../../../WriteUps/SD-1/DS340/README.md), indicating that the models still struggled to learn the effect. 
 
-As for the difference in accuracy between models with a learning rate of 0.01 and 0.0001, there seemed to be very little difference between models with the exact same hyperparameters besides learning rate. For example, models 6 and 7. 
+As for the difference in accuracy between models with a learning rate of 0.01 and 0.0001, there seemed to be very little difference between models with the exact same hyperparameters besides learning rate. For example, [Model 6](../../../Models/DSL20HPreamp/UltraGain/Model_6) and [Model 7](../../../Models/DSL20HPreamp/UltraGain/Model_7). 
 
 Model 6 and Model 7 Results:
 ![Model6and7](../../../Images/DSL20HPreamp/UltraGain/m6vm7.png)
@@ -100,7 +100,7 @@ Model 7 (0.0001 Learning Rate) Train Val Loss Graph:
 
 From both models, the difference in accuracy for all test riffs is < 1%. However, the training for Model 7 was much smoother. 
 
-Given that all models performed poorly, it became necessary to look at the waveforms to try and see where the models were messing up. My initial hypothesis was that the models struggled to learn due to random noise from the DSL20H Preamp. The preamp is tube driven, which by the nature of the tecehnolgy is prone to random noise, especially when nothing is being played. It occurred to me that it was possible that the models were learning how to distort music signals accurately, but was messing up on the random noise. To check this, I graphed waveforms from Model 35 from various parts of [shadowlove.wav](../../../Data/Inputs/shadowlove.wav). 
+Given that all models performed poorly, it became necessary to look at the waveforms to try and see where the models were messing up. My initial hypothesis was that the models struggled to learn due to random noise from the DSL20H Preamp. The preamp is tube driven, which by the nature of the tecehnolgy is prone to random noise, especially when nothing is being played. It occurred to me that it was possible that the models were learning how to distort music signals accurately, but was messing up on the random noise. To check this, I graphed waveforms from [Model 35](../../../Models/DSL20HPreamp/UltraGain/Model_35) from various parts of [shadowlove.wav](../../../Data/Inputs/shadowlove.wav). 
 
 Beginning Noise Chunk:
 ![Noise](../../../Images/DSL20HPreamp/UltraGain/Noise.png)
